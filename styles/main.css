@@ -3,25 +3,50 @@ html {
 }
 
 body {
-
+    background-color: thistle;
 }
 
 .grid-item {
-    background-color: thistle;
-    width: 18px;
-    height: 18px;
+    background-color: white;
+}
+
+.border {
     border: 1px solid black;
 }
 
 #container{
-    width: 320px;
-    background-color: black;
-    height: 320px;
+    margin: 34px auto;
     display: grid;
-    grid-template-rows: repeat(16, 20px);
-    grid-template-columns: repeat(16, 20px);
+    width: 600px;
+    height: 600px;
 }
 
-.black {
-    background-color: black;
+#clear {
+    position: fixed;
+    left: 50px;
+    top: 50px;
+}
+
+#grid-size {
+    position: fixed;
+    left: 50px;
+    top: 80px;
+}
+
+#toggle-border {
+    position: fixed;
+    left: 50px;
+    top: 110px;
+}
+
+#black {
+    position: fixed;
+    left: 50px;
+    top: 140px;
+}
+
+#random {
+    position: fixed;
+    left: 50px;
+    top: 170px;
 }
