@@ -1,0 +1,27 @@
+html {
+
+}
+
+body {
+
+}
+
+.grid-item {
+    background-color: thistle;
+    width: 18px;
+    height: 18px;
+    border: 1px solid black;
+}
+
+#container{
+    width: 320px;
+    background-color: black;
+    height: 320px;
+    display: grid;
+    grid-template-rows: repeat(16, 20px);
+    grid-template-columns: repeat(16, 20px);
+}
+
+.black {
+    background-color: black;
+}
