@@ -1,9 +1,10 @@
 html {
-
+    font-size: 10px;
 }
 
 body {
-    background-color: thistle;
+    background-color: #f6f4e6;
+    color: #41444b;
 }
 
 .grid-item {
@@ -11,7 +12,7 @@ body {
 }
 
 .border {
-    border: 1px solid black;
+    border: 1px solid #52575d;
 }
 
 #container{
@@ -19,34 +20,50 @@ body {
     display: grid;
     width: 600px;
     height: 600px;
+    border: 1px solid #52575d;
 }
 
 #clear {
     position: fixed;
     left: 50px;
-    top: 50px;
+    top: 54px;
 }
 
 #grid-size {
     position: fixed;
     left: 50px;
-    top: 80px;
+    top: 94px;
 }
 
 #toggle-border {
     position: fixed;
     left: 50px;
-    top: 110px;
+    top: 134px;
 }
 
 #black {
     position: fixed;
     left: 50px;
-    top: 140px;
+    top: 174px;
 }
 
 #random {
     position: fixed;
     left: 50px;
-    top: 170px;
+    top: 214px;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    background-color: #fddb3a;
+    border: 1px solid #52575d;
+    font-size: 2rem;
+    border-radius: 5rem;
+    outline: none;
+}
+
+button:focus {
+    border: 2px solid #41444b;
+    border-radius: 5rem;
 }
