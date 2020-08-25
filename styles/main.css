@@ -9,7 +9,6 @@ html {
 
 body {
     background-color: #fef04e;
-    color: #41444b;
     font-family: 'fatface';
     display: flex;
 }
@@ -39,6 +38,7 @@ button {
     font-family: inherit;
     border: none;
     outline: none;
+    color: #f8f8ff;
 }
 
 #buttons {
