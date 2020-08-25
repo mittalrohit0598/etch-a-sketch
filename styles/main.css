@@ -1,10 +1,17 @@
+@font-face {
+    font-family: 'fatface';
+    src: url('../fonts/AbrilFatface-Regular.ttf');
+}
+
 html {
     font-size: 10px;
 }
 
 body {
-    background-color: #f6f4e6;
+    background-color: #fef04e;
     color: #41444b;
+    font-family: 'fatface';
+    display: flex;
 }
 
 .grid-item {
@@ -12,58 +19,44 @@ body {
 }
 
 .border {
-    border: 1px solid #52575d;
+    border: 1px solid #f05a9c;
 }
 
 #container{
-    margin: 34px auto;
+    margin: 33px 50px 0;
     display: grid;
-    width: 600px;
-    height: 600px;
-    border: 1px solid #52575d;
-}
-
-#clear {
-    position: fixed;
-    left: 50px;
-    top: 54px;
-}
-
-#grid-size {
-    position: fixed;
-    left: 50px;
-    top: 94px;
-}
-
-#toggle-border {
-    position: fixed;
-    left: 50px;
-    top: 134px;
-}
-
-#black {
-    position: fixed;
-    left: 50px;
-    top: 174px;
-}
-
-#random {
-    position: fixed;
-    left: 50px;
-    top: 214px;
+    min-width: 600px;
+    min-height: 600px;
+    border: 1px solid #f05a9c;
 }
 
 button {
-    width: 200px;
+    width: 160px;
     height: 30px;
-    background-color: #fddb3a;
-    border: 1px solid #52575d;
-    font-size: 2rem;
-    border-radius: 5rem;
+    margin: 0 50px 10px;
+    background-color: #f05a9c;
+    font-size: 1.5rem;
+    font-family: inherit;
+    border: none;
     outline: none;
 }
 
-button:focus {
-    border: 2px solid #41444b;
-    border-radius: 5rem;
+#buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 33px 0;
+}
+
+button:active, button:focus {
+    border: 2px solid black
+}
+
+@media (min-width: 965px) {
+    #container {
+        margin: 33px 50px 0 auto;
+    }
+
+    #buttons {
+        margin-right: auto;
+    }
 }
